@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TK Serviços Elétricos</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <a href="#" class="logo"><img src="./image/logo.png"></a>
+    <div class="menuToggle" onclick="toggleMenu();"></div>
+    <ul class="navigation">
+      <li><a href="#banner" onclick="toggleMenu();">Início</a></li>
+      <li><a href="#about" onclick="toggleMenu();">Sobre nós</a></li>
+      <li><a href="#services" onclick="toggleMenu();">Serviços</a></li>
+      <li><a href="#gallery" onclick="toggleMenu();">Galeria</a></li>
+      <li><a href="#contact" onclick="toggleMenu();">Contatos</a></li>
+    </ul>
+  </header>
+  <section class="banner" id="banner">
+    <div class="content">
+      <h2>Procurando um eletrecista?</h2>
+      <p>Prestação de serviços diferenciados, prezando pela qualidade, segurança e eficiência.<br>Confira, nossas áreas de atuação e também a galeria de serviços concluido para nossos clientes.<p>
+      <a href="#services" class="btn">Nosso serviços</a>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="heading">
+      <h2 class="titleText"><span>S</span>obre nós</h2>
+    </div>
+    <div class="contentAbout">
+      <div class="contentBox">
+        <p>Nossa empressa foi criada em 2016, com a missão de prestação de serviços diferenciados na área elétrica.<br>Executando-os de forma segura, inteligente e eficaz através de equipe qualificada, buscando a satisfação e a confiança de seus clientes.<br>
+          <br>Tendo como visão de ser uma empresa referência no ramo de serviços elétricos, avançando no mercado de atuação e expandido seus negócios junto de seus colaboradores e clientes.<br>
+          <br>Com seus valores sempre em mente para entregar um serviço com agilidade, eficiência, qualidade, excelência e transparência para seus clientes.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="heading white">
+      <h2 class="titleText"><span>S</span>erviços</h2>
+    </div>
+    <div class="contentS">
+      <div class="servicesBox">
+        <img src="./image/papel.png">
+        <h2>Projetos NR12</h2>
+        <p>Criação e adequação para normas técnicas NR12 e NR10</p>
+      </div>
+      <div class="servicesBox">
+        <img src="./image/caixafusiveis.png">
+        <h2>Caixa de Fusiveis</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, assumenda.</p>
+      </div>
+      <div class="servicesBox">
+        <img src="./image/electricalpanel.png">
+        <h2>Painéis Elétricos</h2>
+        <p>Automação e manutenção de painéis elétricos e quadros de comando</p>
+      </div>
+      <div class="servicesBox">
+        <img src="./image/circuito-eletrico.png">
+        <h2>Rede</h2>
+        <p>Rede de lógica com seus devidos reparos elétricos</p>
+      </div>
+      <div class="servicesBox">
+        <img src="./image/predial.png">
+        <h2>Instalação Predial</h2>
+        <p>Instalação e manutenção predial e industrial</p>
+      </div>
+      <div class="servicesBox">
+        <img src="./image/estacao-eletrica.png">
+        <h2>Estação</h2>
+        <p>Instalação de estação automotiva para veiculos elétricos</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery" id="gallery">
+    <div class="heading gallery">
+      <h2 class="titleText"><span>G</span>aleria</h2>
+    </div>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./image/img1.jpeg"></div>
+        <div class="swiper-slide"><img src="./image/img2.jpeg"></div>
+        <div class="swiper-slide"><img src="./image/img3.jpeg"></div>
+        <div class="swiper-slide"><img src="./image/img4.jpeg"></div>
+        <div class="swiper-slide"><img src="./image/img5.jpeg"></div>
+        <div class="swiper-slide"><img src="./image/img6.jpeg"></div>
+        <div class="swiper-slide"><img src="./image/img7.jpeg"></div>
+        <div class="swiper-slide"><img src="./image/img8.jpeg"></div>
+        <div class="swiper-slide"><img src="./image/img9.jpeg"></div>
+        <div class="swiper-slide"><img src="./image/img10.jpeg"></div>
+        <div class="swiper-slide"><img src="./image/img11.jpeg"></div>
+        <div class="swiper-slide"><img src="./image/img12.jpeg"></div>
+        <div class="swiper-slide"><img src="./image/img13.jpeg"></div>
+        <div class="swiper-slide"><img src="./image/img14.jpeg"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="heading">
+      <h2 class="titleText"><span>C</span>ontatos</h2>
+    </div>
+    <div class="contentContact">
+      <div class="contactInfo">
+        <div class="boxSocial">
+          <div class="boxWeb">
+            <div class="icon">
+              <a href="https://api.whatsapp.com/send/?phone=5551985556532&text&type=phone_number&app_absent=0" target="_blank"><img src="./image/whatsapp.png"></a>
+            </div>
+          <div class="boxWeb">
+            <div class="icon">
+              <a href="https://www.facebook.com/tkservicoseletricos" target="_blank"><img src="./image/facebook.png"></a>
+            </div>
+          </div>
+            <div class="boxWeb">
+              <div class="icon">
+                <a href="https://www.instagram.com/tkservicoseletricos" target="_blank"><img src="./image/instagram.png"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="formBx">
+        <form action="https://formsubmit.co/edissonamandio@gmail.com" method="POST">
+          <h3>Entre em contato</h3>
+          <input type="hidden" name="_template" value="box">
+          <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+          <input type="hidden" name="_autoresponse" value="Recebemos sua mensagem, obrigado pelo contato e brevemente retornaremos!">
+          <input type="text" name="name" placeholder="Nome Completo">
+          <input type="email" name="email" placeholder="E-mail">
+          <input type="text" name="suject" placeholder="Assunto">
+          <textarea name="message" placeholder="Escreva sua mensagem aqui..."></textarea>
+          <input type="submit" value="Enviar">
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script src="scroll.js"></script>
+  <script src="menu.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="swiper.js"></script>
+</body>
+</html>

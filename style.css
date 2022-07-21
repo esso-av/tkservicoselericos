@@ -27,9 +27,10 @@ section {
 }
 
 .banner .content h2 {
-  margin-top: 40px;
-  font-size: 4em;
+  margin-top: 60px;
+  font-size: 3.4em;
   color: #fff;
+  text-transform: uppercase;
 }
 
 .banner .content p {
@@ -389,6 +390,7 @@ header .navigation li a:hover {
   .banner .content h2 {
     font-size: 2em;
     color: #fff;
+    margin-top: 100px;
   }
   .banner .content p {
     font-size: 1.4em;

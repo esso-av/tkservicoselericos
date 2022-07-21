@@ -399,6 +399,11 @@ header .navigation li a:hover {
   .contentBox p {
     font-size: 1.1em;
   }
+
+  .services .contentS {
+    margin-left: 0;
+    margin-right: 0;
+  }
   
   .contentContact {
     flex-direction: column;

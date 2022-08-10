@@ -3,6 +3,10 @@ var swiper = new Swiper(".swiper-container", {
   grabCursor: true,
   centeredSlides: true,
   slidesPerView: "auto",
+  autoplay: {
+    delay: 1500,
+    disableOnInteraction: false,
+  },
   coverflowEffect: {
     rotate: 20,
     stretch: 0,

@@ -341,6 +341,11 @@ header .navigation li a:hover {
   transition: 0.5s;
 }
 
+footer {
+  padding: 20px;
+  text-align: center;
+}
+
 @media (max-width: 991px) {
   header,
   header.sticky {
@@ -352,9 +357,9 @@ header .navigation li a:hover {
 
   header .navigation.active {
     width: 100%;
-    height: calc(100% - 120px);
+    height: calc(100% - 100px);
     position: fixed;
-    top: 120px;
+    top: 100px;
     left: 0;
     display: flex;
     justify-content: center;
@@ -440,4 +445,9 @@ header .navigation li a:hover {
     margin-left: 0;
   }
   
+  footer {
+    font-size: 0.8em;
+    margin: 10px;
+    text-align: center;
+  }
 }

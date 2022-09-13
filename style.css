@@ -12,12 +12,13 @@ section {
 .banner {
   position: relative;
   width: 100%;
-  min-height: 95vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(0deg, #48dbfb,#0abde3,#0abde3,#48dbfb);
-  opacity: 90%;
+  background: rgba(0, 0, 0, 0.5) url(./image/fundo.jpeg);
+  background-size: 100% 100%;
+  background-blend-mode: darken;
 }
 
 .banner .content {
@@ -26,32 +27,30 @@ section {
 }
 
 .banner .content h2 {
-  margin-top: 60px;
-  font-size: 3.4em;
-  color: #fff;
-  text-transform: uppercase;
-}
-
-.banner .content p {
+  position: relative;
   margin-top: 40px;
-  font-size: 1.8em;
-  font-weight: 500;
-  color: #111;
+  font-size: 2.4em;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  z-index: 2;
 }
 
 .btn {
+  position: relative;
   font-size: 1em;
+  font-weight: bold;
   color: #fff;
   background: #ffd32a;
   box-shadow: 0 15px 25px #ffd32a66;
   display: inline-block;
   padding: 10px 30px;
-  margin-top: 20px;
+  margin-top: 40px;
   border-radius: 1em;
   text-transform: uppercase; 
   text-decoration: none;
   letter-spacing: 2px;
   transition: 0.5s;
+  z-index: 2;
 }
 
 .btn:hover {
@@ -96,8 +95,9 @@ header .navigation li {
 
 header .navigation li a {
   text-decoration: none;
-  color: #fff;
-  font-size: 300;
+  color: rgb(255, 255, 255);
+  font-size: 500;
+  font-weight: bold;
 }
 
 header.sticky .navigation li a {
@@ -106,12 +106,12 @@ header.sticky .navigation li a {
 
 header .navigation li a:hover {
   color: #ffd32a;
+  transition: 0.5s;
 }
 
 /* About */
 .about {
   background: linear-gradient(0deg, #48dbfb,#0abde3,#0abde3,#48dbfb);
-  opacity: 90%;
   min-height: 95vh;
   max-height: 900px
 }
@@ -128,12 +128,13 @@ header .navigation li a:hover {
 }
 
 .heading h2 {
-  margin-top: 120px;
+  margin-top: 80px;
   font-weight: 600;
   font-size: 30px;
 }
 
 .contentBox p {
+  margin: 100px;
   margin-top: 80px;
   font-size: 1.5em;
 }
@@ -141,7 +142,10 @@ header .navigation li a:hover {
 /* Services */
 .services {
   background: linear-gradient(0deg, #48dbfb,#0abde3,#0abde3,#48dbfb);
-  opacity: 90%;
+}
+
+.services .titleText {
+  margin-top: 80px;
 }
 
 .services .contentS {
@@ -182,14 +186,13 @@ header .navigation li a:hover {
 /* Gallery */
 .gallery {
   background: linear-gradient(0deg, #48dbfb,#0abde3,#0abde3,#48dbfb);
-  opacity: 90%;
 }
 
 .heading.gallery {
   font-weight: 600;
   font-size: 30px;
   background: none;
-  margin-top: 120px;
+  margin-top: 80px;
 }
 
 .swiper-container {
@@ -218,7 +221,10 @@ header .navigation li a:hover {
 /* Contact */
 .contact {
   background: linear-gradient(0deg, #48dbfb,#0abde3,#0abde3,#48dbfb);
-  opacity: 90%;
+}
+
+.contact .titleText {
+  margin-top: 80px;
 }
 
 .contentContact {
@@ -377,26 +383,36 @@ header .navigation li a:hover {
     background-position: center;
     cursor: pointer;
   }
+
   .menuToggle.active {
     background: url(./image/close.png);
     background-size: 25px;
     background-repeat: no-repeat;
     background-position: center;
   }
+
   header.sticky .menuToggle {
     filter: invert(1);
   }
-  .banner .content h2 {
-    font-size: 2em;
-    color: #fff;
-    margin-top: 100px;
+
+  .banner {
+    background-size: cover;
   }
-  .banner .content p {
-    font-size: 1.4em;
+
+  .banner .content h2 {
+    margin-top: 60px;
+    font-size: 1.6em;
+    color: rgb(255, 255, 255);
+  }
+
+  .content .btn {
+    margin-top: 80px;
   }
 
   .contentBox p {
-    font-size: 1.1em;
+    margin: 20px;
+    margin-top: 0px;
+    font-size: 1.2em;
   }
 
   .services .contentS {
